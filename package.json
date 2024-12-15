@@ -1,0 +1,15 @@
+{
+  "name": "blog-backend",
+  "version": "1.0.0",
+  "description": "Backend For Personal Blog",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Chirag",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
