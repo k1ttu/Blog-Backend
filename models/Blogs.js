@@ -29,7 +29,12 @@ const BlogSchema = new mongoose.Schema({
       href: String,
     },
   ],
-});
+  preview:{
+    type:String,
+    require:true
+  }
+}
+  );
 
 const Blogs = mongoose.model('Blog',BlogSchema)
 
