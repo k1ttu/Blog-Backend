@@ -2,10 +2,11 @@
   "name": "blog-backend",
   "version": "1.0.0",
   "description": "Backend For Personal Blog",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node index.js",
+    "build" : "node index.js"
   },
   "author": "Chirag",
   "license": "ISC",
