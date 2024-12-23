@@ -24,9 +24,7 @@ app.get('/',(req , res)=>{
 app.get('/blogs', async ( req , res )=>{
     try{
         const data = await Blogs.find();
-        res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-        res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-        res.setHeader('Access-Control-Allow-Origin', '*');
+        
         res.send(data);
         console.log(data);
     }
@@ -57,9 +55,7 @@ app.get('/blogs/:id' , async(req , res ) => {
     try{
         const id = req.params.id;
         const post = await Blogs.findById(id);
-        res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-        res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-        res.setHeader('Access-Control-Allow-Origin', '*');
+        
         res.send(post);
     }catch(error){
         res.status(201).send(
